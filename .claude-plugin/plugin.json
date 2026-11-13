@@ -1,0 +1,21 @@
+{
+  "name": "goat-glass-ribbon",
+  "version": "1.0.0",
+  "description": "Glass Ribbon · Шилэн тууз: a violet talking-head look with a glowing ribbon and orbs behind the speaker, frosted glass cards, serif-italic accent captions and a light-streak wipe to numbered step cards. Uses a MediaPipe person cut-out on every frame. Renders a 1080x1920 MP4 for Reels/TikTok.",
+  "author": {
+    "name": "GOAT Academy"
+  },
+  "keywords": [
+    "video",
+    "editing",
+    "reels",
+    "tiktok",
+    "talking-head",
+    "glass",
+    "ribbon",
+    "cutout",
+    "mediapipe",
+    "mongolian",
+    "ffmpeg"
+  ]
+}

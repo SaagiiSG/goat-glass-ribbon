@@ -1,0 +1,13 @@
+{
+  "name": "goat-glass-ribbon",
+  "owner": {
+    "name": "GOAT Academy"
+  },
+  "plugins": [
+    {
+      "name": "goat-glass-ribbon",
+      "source": "./",
+      "description": "Glass Ribbon · Шилэн тууз: violet glass-and-light talking-head look for Reels/TikTok, with a person cut-out. Mongolian-first."
+    }
+  ]
+}
