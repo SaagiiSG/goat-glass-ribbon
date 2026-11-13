@@ -36,9 +36,14 @@ Claude өөрөө суулгана. Дараа нь `/reload-plugins` гэж б�
 /plugin install goat-glass-ribbon@goat-glass-ribbon
 ```
 
+**Zip файлаар авсан бол:**
+1. `goat-glass-ribbon.zip`-ийг задална. Задалсан `goat-glass-ribbon` хавтсаа устгалгүй үлдээгээрэй.
+2. Claude Code-д "Энэ хавтсан дахь plugin-ийг суулгаад өг:" гэж бичээд задалсан `goat-glass-ribbon` хавтсаа чирж оруулна.
+3. `/reload-plugins` гэж бичнэ.
+
 **Шинэ хувилбар гарвал:** Claude-д "goat-glass-ribbon plugin-ийг шинэчил" гэж хэлэхэд болно.
 
-> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-glass-ribbon` and then `claude plugin install goat-glass-ribbon@goat-glass-ribbon`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-glass-ribbon` and then `claude plugin update goat-glass-ribbon@goat-glass-ribbon`.
+> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-glass-ribbon` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-glass-ribbon folder>`) and then `claude plugin install goat-glass-ribbon@goat-glass-ribbon`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-glass-ribbon` and then `claude plugin update goat-glass-ribbon@goat-glass-ribbon`.
 
 ---
 
