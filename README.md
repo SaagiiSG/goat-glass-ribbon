@@ -1,5 +1,7 @@
 # 🐐 Glass Ribbon · Шилэн тууз
 
+<p align="center"><img src="assets/poster.jpg" width="300" alt="Glass Ribbon · Шилэн тууз"></p>
+
 **Claude Code дотор ажилладаг видео эдитийн skill.** Таны ард гэрэлтэй тууз эргэлдэж, шилэн карт дээр гол санаа гарна. Тайван, орчин үеийн харагдана.
 
 Reels, TikTok-д бэлэн 1080×1920 MP4 гаргана. GOAT Academy-гийн 14 эдитийн стилийн нэг.
