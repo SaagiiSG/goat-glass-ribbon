@@ -19,8 +19,9 @@ Reels, TikTok-д бэлэн 1080×1920 MP4 гаргана. GOAT Academy-гийн
 
 - **Claude Code** (desktop app эсвэл terminal), Claude Pro / Max эрхтэй
 - **Mac эсвэл Windows**
-- **ffmpeg** болон **uv**. Байхгүй бол Claude өөрөө шалгаад, суулгах командыг хэлж өгнө.
-- **Компьютер:** Apple чиптэй Mac (M1 ба түүнээс шинэ, macOS 13+) эсвэл 64-bit Windows 10/11. Хуучин Intel Mac дээр ажиллахгүй. Windows дээр одоогоор туршаагүй.
+- **Node 22+**, **ffmpeg**, Mac дээр **whisper-cpp**. Байхгүй бол Claude өөрөө шалгаад, суулгах командыг хэлж өгнө.
+- **Компьютер:** Mac эсвэл 64-bit Windows 10/11. Apple чиптэй Mac (M1+) дээр туршсан. Windows дээр одоогоор туршаагүй.
+- Анхны бичлэг дээр ярианы загвар (~1.6 GB) болон хүн тасдах загвар (280 MB хүртэл) нэг удаа татагдана. Бүх зүйл таны компьютер дээр ажиллана, юу ч интернэтэд илгээгдэхгүй.
 
 ---
 
@@ -43,9 +44,26 @@ Claude өөрөө суулгана. Дараа нь `/reload-plugins` гэж б�
 2. Claude Code-д "Энэ хавтсан дахь plugin-ийг суулгаад өг:" гэж бичээд задалсан `goat-glass-ribbon` хавтсаа чирж оруулна.
 3. `/reload-plugins` гэж бичнэ.
 
-**Шинэ хувилбар гарвал:** Claude-д "goat-glass-ribbon plugin-ийг шинэчил" гэж хэлэхэд болно.
+---
 
-> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-glass-ribbon` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-glass-ribbon folder>`) and then `claude plugin install goat-glass-ribbon@goat-glass-ribbon`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-glass-ribbon` and then `claude plugin update goat-glass-ribbon@goat-glass-ribbon`.
+## Шинэчлэлт
+
+Автомат шинэчлэлт анхандаа унтраалттай байдаг. Бид таны өмнөөс асааж чадахгүй тул нэг удаа өөрөө асаана:
+1. Claude Code дотор `/plugin` гэж бичнэ.
+2. **Marketplaces** → **goat-glass-ribbon** → **Enable auto-update** дээр дарна.
+
+Ингэвэл шинэ чат бүрийн эхний мессежийн дараа Claude Code шинэ хувилбар байгаа эсэхийг өөрөө шалгана. "Plugin updated" гэж гарвал `/reload-plugins` гэж бичнэ.
+
+**Гараар шинэчлэх:** Claude-д "goat-glass-ribbon plugin-ийг шинэчил" гэж хэлэхэд болно. Эсвэл terminal дээр энэ 2 мөрийг ээлжлэн бичнэ:
+```
+claude plugin marketplace update goat-glass-ribbon
+claude plugin update goat-glass-ribbon@goat-glass-ribbon
+```
+Дараа нь Claude Code дотор `/reload-plugins` гэж бичих эсвэл Claude Code-оо хаагаад дахин нээнэ.
+
+**Zip файлаас суулгасан бол** plugin өөрөө шинэчлэгдэхгүй. Шинэ хувилбар авахын тулд дээрх GitHub-ийн аргаар суулгаарай.
+
+> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-glass-ribbon` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-glass-ribbon folder>`) and then `claude plugin install goat-glass-ribbon@goat-glass-ribbon`, then tell the user to type `/reload-plugins`. To update it: run `claude plugin marketplace update goat-glass-ribbon` and then `claude plugin update goat-glass-ribbon@goat-glass-ribbon`, then tell the user to type `/reload-plugins`. Auto-update is off by default; the user turns it on once in `/plugin` → Marketplaces → goat-glass-ribbon → Enable auto-update. A copy installed from an unzipped folder never updates by itself; to get updates, install it from GitHub (`SaagiiSG/goat-glass-ribbon`) instead.
 
 ---
 
@@ -71,7 +89,8 @@ Claude өөрөө суулгана. Дараа нь `/reload-plugins` гэж б�
 ## Бичлэг хийх зөвлөгөө
 
 - Үс, хувцаснаасаа өөр өнгийн дэвсгэрийн өмнө зогс.
-- Толгойгоо кадрын дээд хагаст байлга: доод хэсэгт бичиг гарна.
+- Цээжнээсээ дээш авч, толгойгоо кадрын дээд хагаст байлга: доод хэсэгт бичиг гарна.
+- Доорх бичиг таны ярианаас автоматаар гарна: тод ярь.
 
 ---
 
